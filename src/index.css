@@ -1,13 +1,64 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna&display=swap');
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Playwrite IT Moderna", serif;
+}
+
+#root{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height:100vh;
+  width:100%;
+  gap:5px;
+  background-color: pink;
+  position:relative;
+  
+}
+
+#root::before{
+  content:"";
+  position: absolute;
+    left: 20%;  
+    top: 40%;
+    transform: translateY(-50%) rotate(320deg);
+    width: 200px; 
+    height: 300px; 
+    background: url('./assets/Questionmark.png') no-repeat center center;
+    background-size: cover;
+    z-index: 0;
+    
+}
+
+.hide-bg::before {
+  opacity: 0; 
+}
+
+@media(max-width:1200px){
+  #root::before{
+    left:15%;
+
+  }
+}
+
+@media(max-width:1140px){
+  #root::before{
+    left:10%;
+
+  }
+}
+
+@media(max-width:980px){
+  #root::before{
+    left:7%;
+
+  }
 }

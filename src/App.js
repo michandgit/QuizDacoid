@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import Play from "./components/Play/Play";
+import Logic from "./components/Logic/Logic";
+import QuizTitle from "./components/QuizTitle/QuizTitle";
+import LogicInt from "./components/LogicInt/LogicInt";
 
-function App() {
+const AppContent = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    const rootElement = document.getElementById("root");
+
+    if (location.pathname === "/mcq" || location.pathname === "/intbased") {
+      rootElement.classList.add("hide-bg");
+    } else {
+      rootElement.classList.remove("hide-bg");
+    }
+  }, [location]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/" element={<Play />} />
+      <Route path="/mcq" element={<QuizTitle />} />
+      <Route path="/intbased" element={<QuizTitle title="Integer Based Questions" />} />
+      <Route path="/quiz" element={<Logic />} />
+      <Route path="/int_quiz" element={<LogicInt />} />
+    </Routes>
   );
-}
+};
+
+const App = () => (
+  <BrowserRouter>
+    <AppContent />
+  </BrowserRouter>
+);
 
 export default App;

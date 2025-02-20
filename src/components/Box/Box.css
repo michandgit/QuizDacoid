@@ -1,0 +1,162 @@
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:20px;
+    justify-content: center;
+    padding: 20px;
+    width:630px;
+    height:460px;
+    background-color: rgb(2, 155, 104);
+    border-radius: 15px;
+    border:15px solid white;
+    color:white;
+    position:relative;
+    z-index:1;
+}
+
+.timer{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+    padding:20px;
+}
+.optionsul{
+    display: grid;
+    place-items: center;
+    grid-template-rows: repeat(2 , 1fr);
+    grid-template-columns: repeat(2 ,1fr);
+    gap:30px;
+    width:90%;
+}
+#ans ul li{
+    list-style: none;
+}
+
+#ans{
+    width:100%;
+    height:154px;
+}
+
+.dashul{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+}
+.dash{
+    background-color: white;
+    border-radius: 10px;
+    padding:10px;
+    width:80%;
+    height:154px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dash input{
+    border:none;
+    outline:none;
+    font-size: 20px;
+    font-weight: 400;
+    color:black;
+    text-align: center;
+}
+
+.dash input::placeholder{
+    color:rgb(162, 159, 159);
+    text-align: center;
+}
+
+.dash button{
+    width:100px;
+    height:54px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(196, 84, 198);
+    color:white;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.question{
+    color:white;
+    font-size: 24px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.option{
+    color:black;
+    font-size: 20px;
+    cursor:pointer;
+    height:54px;
+    width:254px;
+    font-weight: 400;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding:10px;
+    border-radius: 10px;
+    background-color: rgb(255, 194, 25);
+}
+
+@media(max-width:860px){
+    .container{
+        width:530px;
+    }
+    .option{
+        width:180px;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+    }
+    #ans.options{
+        place-items: center;
+    }
+}
+
+@media(max-width:700px){
+    .container{
+        width:400px;
+    }
+    .option{
+        width:180px;
+    }
+    #ans.options{
+        place-items: center;
+    }
+}
+
+@media(max-width:587px){
+    .container{
+        width:430px;
+    }
+    .option{
+        width:140px;
+    }
+    #ans.options{
+        place-items: center;
+    }
+}
+
+@media(max-width:587px){
+    .container{
+        width:430px;
+    }
+    .option{
+        width:140px;
+    }
+    #ans.options{
+        place-items: center;
+    }
+}

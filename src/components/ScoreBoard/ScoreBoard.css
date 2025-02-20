@@ -1,0 +1,45 @@
+.scoreboard-container {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 30px auto;
+    width: 50%;
+    z-index:1;
+  }
+  
+  .scoreboard-container h2 {
+    color: #333;
+    font-size: 2rem;
+  }
+  
+  .scoreboard-container p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+  
+  
+  
+  .scoreboard-container button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.3s;
+  }
+  
+  .scoreboard-container button:hover {
+    background-color: #388E3C;
+  }
+  
+
+  @media(max-width:600px){
+    .scoreboard-container{
+      width:300px;
+    }
+  }
