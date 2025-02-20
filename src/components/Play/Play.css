@@ -76,21 +76,21 @@
 
 @media(max-width:1980px){
     .top{
-        top:120px;
+        top:70px;
         right:450px;
     }
 }
 
 @media(max-width:1000px){
     .top{
-        top:100px;
+        top:70px;
         right:180px;
     }
 }
 
 @media(max-width:900px){
     .top{
-        top:100px;
+        top:70px;
         right:160px;
     }
     .letsplay{
@@ -103,7 +103,7 @@
 
 @media(max-width:800px){
     .top{
-        top:100px;
+        top:70px;
         right:140px;
     }
     .letsplay{
@@ -113,7 +113,7 @@
 
 @media(max-width:600px){
     .top{
-        top:100px;
+        top:70px;
         right:100px;
     }
     .letsplay{
@@ -130,7 +130,7 @@
 
 @media(max-width:515px){
     .top{
-        top:110px;
+        top:70px;
         right:100px;
     }
     .letsplay{
@@ -149,7 +149,7 @@
 
 @media(max-width:335px){
     .top{
-        top:100px;
+        top:70px;
         right:30px;
     }
     .letsplay{
